@@ -13,6 +13,15 @@ Start the program from the command line with `python cveparser.py`. Once the pro
 ```
 Select a number to select a data source to use when searching for a particular vulnerability. The 'logging' option will save results of your search queries in the current working directory as an application log from PyParser.
 
+## Dependencies
+PyParser depends on the following Python 2.7 libraries.
+```
+blessings
+shodan
+pycurl
+```
+Should you find you do not have any of these libraries installed please use Python's built in package manager to resolve it like so `pip install blessings` etc.
+
 ### Note
 
 This is a BETA release, as such there might be some bugs. If you happen to encounter a bug please feel free to [open a ticket](https://github.com/NullArray/PyParser/issues) or [submit a pull request](https://github.com/NullArray/PyParser/pulls)
