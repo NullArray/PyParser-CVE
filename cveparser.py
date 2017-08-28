@@ -72,7 +72,7 @@ def exploit_DB():
 		
 			sys.exit(0)
 		
-		print "\n[" + t.green("+") + "]Completed\n"
+		print "\n[" + t.green("+") + "]Completed"
 		edb = True
 	
 	elif get_edb == 'n':
