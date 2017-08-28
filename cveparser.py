@@ -37,7 +37,7 @@ def s_sploit():
 	query = raw_input("\n<" + t.cyan("SEARCHSPLOIT") + ">$ " )
 	
 	try:
-		result = os.system("searchsploit -j" + query)
+		result = os.system("searchsploit -j " + query)
 	except Exception as e:
 		print "\n[" + t.red("!") + "]Critical. An error was raised while attempting to retrieve data"
 		print e		
