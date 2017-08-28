@@ -27,7 +27,7 @@ oo.ooooo.  oooo    ooo oo.ooooo.   .oooo.   oooo d8b  .oooo.o  .ooooo.   oooo d8
  888       .o..P'       888                                             
 o888o      `Y8P'       o888o            				
  
-						Common Vulnerabilities and Exploits
+					Common Vulnerabilities and Exploits
  																""")
 
 # We'll just go ahead and steal ExploitDB's hard work for this part (<3)
@@ -144,7 +144,7 @@ def cve_mitre():
 def main():
 	try:
 		while True:
-			print "\n\n[" + t.green("+") + "]Welcome to PyParser-CVE. Please select an action"
+			print "\n[" + t.green("+") + "]Welcome to PyParser-CVE. Please select an action"
 			print """
 
 1. Query Shodan				4. Logging	
