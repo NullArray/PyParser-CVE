@@ -1,6 +1,6 @@
 # PyParser
 
-PyParser is a vulnerability parser that looks for CVE's from different sources. It employs the Shodan API, has the ability to retrieve and process data from [CVE Mitre](https://cve.mitre.org/) and comes with fucntionality to install and use Offensive Security's ExploitDB [Searchsploit](https://github.com/offensive-security/exploit-database/blob/master/searchsploit) utility.
+PyParser is a vulnerability parser that looks for CVE's from different sources. It employs the Shodan API, has the ability to retrieve and process data from [CVE Mitre](https://cve.mitre.org/) and comes with functionality to install and use Offensive Security's ExploitDB [Searchsploit](https://github.com/offensive-security/exploit-database/blob/master/searchsploit) utility.
 
 ## Usage
 
