@@ -20,7 +20,7 @@ blessings
 shodan
 pycurl
 ```
-Should you find you do not have any of these libraries installed please use Python's built in package manager to resolve it like so `pip install blessings` etc.
+Should you find you do not have any of these libraries installed you can use Python's built in package manager to resolve it like so `pip install blessings`. Alternatively, feel free to use the requirements file i ahve amde for this project like so `pip install -r requirements.txt`.
 
 ### Note
 
