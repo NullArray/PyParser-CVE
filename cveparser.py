@@ -211,7 +211,7 @@ if __name__ == '__main__':
 		SHODAN_API_KEY = pickle.load(open( "api.p", "rb" ))
 		path = os.path.abspath("api.p")
 
-		print "\n[" + t.green("+") + "]Your Shodan API key was sucesfully loaded from " + path
+		print "\n[" + t.green("+") + "]Your Shodan API key was successfully loaded from " + path
 		if not os.path.isdir('exploit-database'):
 			exploit_DB()
 	
