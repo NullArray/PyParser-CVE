@@ -26,9 +26,8 @@ oo.ooooo.  oooo    ooo oo.ooooo.   .oooo.   oooo d8b  .oooo.o  .ooooo.   oooo d8
  888bod8P'     .8'      888bod8P' `Y888""8o d888b    8""888P' `Y8bod8P' d888b 
  888       .o..P'       888                                             
 o888o      `Y8P'       o888o            				
- 
 					Common Vulnerabilities and Exploits
- 																""")
+ 										""")
 
 # We'll just go ahead and steal ExploitDB's hard work for this part (<3)
 def s_sploit():
@@ -39,7 +38,7 @@ def s_sploit():
 	try:
 		result = os.system("searchsploit -j " + query)
 	except Exception as e:
-		print "\n[" + t.red("!") + "]Critical. An error was raised while attempting to retrieve data"
+		print "\n[" + t.red("!") + "]Critical. An error was raised while attempting to retrieve data."
 		print e		
 	
 	if logging == True:
@@ -53,7 +52,7 @@ def exploit_DB():
 	
 	print "\n[" + t.green("+") + "]To get additional comprehensive search results, installing ExploitDB's" 
 	print "[" + t.green("+") + "]'Searchsploit' utility is recommended. Functionality from which will be"
-	print "[" + t.green("+") + "]integrated into PyParser-CVE"	
+	print "[" + t.green("+") + "]integrated into PyParser-CVE."	
 	
 	print "\n[" + t.magenta("?") + "]Would you like PyParser to install this utility?"
 	get_edb = raw_input("[Y]es/[N]o: ")
@@ -134,11 +133,13 @@ def cve_mitre():
 		for row in rows:
 			for col_name in row:
 				if query in row[col_name]:
-					print json.dumps(row)
+					result = json.dumps(row)
+					print result
+					
 				
 				if logging == True:
 					with open('cve_mitre.log', 'ab') as outfile:
-						outfile.write(row)
+						outfile.write(result)
 						outfile.close
 
 def main():
@@ -161,7 +162,7 @@ def main():
 			
 				if edb == False:
 					print "\n[" + t.red("!") + "]Warning! Searchsploit was not installed."
-					print "[" + t.green("?") + "]Would you like PyParser to automatically resolve this issue\n?"
+					print "[" + t.green("?") + "]Would you like PyParser to automatically resolve this issue?\n"
 
 					get_edb = raw_input("[Y]es/[N]o: ")
 					if get_edb == 'y':
